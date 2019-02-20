@@ -1,32 +1,28 @@
 <template>
-  <div id="app">
+  <main id="app">
     <header>
-      <h1>Krystal<strong>Moore</strong></h1>
+      <h1>Krystal<span>Moore</span></h1>
     </header>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
+    <nav>
+      <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
-    </div>
+    </nav>
     <router-view />
-  </div>
+    <footer>
+      <p>footer</p>
+    </footer>
+  </main>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
+  #app {
+    padding: 1rem;
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
     color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+    background-color: $primary-lightest;
+    min-height: 100vh;
   }
-}
 </style>

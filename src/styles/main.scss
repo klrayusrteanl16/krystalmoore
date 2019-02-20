@@ -1,5 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,500,600');
+@import 'reset';
 @import 'variables';
 
-h1 {
-  
+header {
+  text-align: center;
+  margin: 1rem 0;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $primary-dark;
+
+    span {
+      margin-left: .1em;
+      font-weight: 200;
+    }
+  }
+}
+
+nav {
+  text-align: center;
+
+  a {
+    color: $primary-dark;
+
+    &.router-link-exact-active {
+      text-decoration: none;
+      color: rgba(0,0,0,.5);
+    }
+
+    &:first-child {
+      margin-right: 1rem;
+    }
+  }
+}
+
+section {
+  width: 60vw;
+  height: 70vh;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: lighten($primary-lightest, 5%);
+}
+
+footer {
+  text-align: center;
 }
