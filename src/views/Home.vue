@@ -2,11 +2,6 @@
   <section class="home">
     <h2>Home!</h2>
 
-    <svg viewBox="0 0 300 300">
-     <circle cx="70" cy="200" r="70" />
-     <circle cx="180" cy="180" r="130" />
-     <circle cx="300" cy="100" r="90" />
-    </svg>
   </section>
 </template>
 
